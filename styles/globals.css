@@ -1,7 +1,10 @@
 html,
 body {
+  height: 100% !important;
+  width: 100% !important;
   padding: 0;
   margin: 0;
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +16,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Joschua_Gumpert_Schriftart;
+  src: url("/font.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
