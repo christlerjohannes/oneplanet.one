@@ -59,7 +59,6 @@ export default function Home() {
             className={styles.video}
             autoPlay
             loop
-            controls="true"
             muted
             playsinline
             poster="/schlieren1.png"
