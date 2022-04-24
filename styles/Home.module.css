@@ -112,6 +112,7 @@
   margin: 16px 0;
   font-size: 22px;
   text-align: center;
+  color: #89a4b3;
 }
 
 .headline3 {
@@ -126,6 +127,7 @@
   text-align: center;
   font-size: 26px;
   font-weight: bold;
+  color: #89a4b3;
 }
 
 .header {
@@ -223,7 +225,7 @@
 .footer {
   padding: 64px 0px;
   display: flex;
-  min-height: 70vh;
+  min-height: 100vh;
   justify-content: center;
   flex-direction: column;
   background-image: url('/bg.jpg');
