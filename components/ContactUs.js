@@ -12,9 +12,11 @@ export const ContactUs = () => {
 
     emailjs.sendForm('service_u0emxmi', 'template_mtj07ac', form.current, 'CwHSxBgv6QMDgLyFA')
       .then((result) => {
-        alert("Nachricht gesendet")
+        e.target.reset();
+        alert("Nachricht wurde gesendet")
         setDisasbleButton(false)
       }, (error) => {
+        setDisasbleButton(false)
         console.log(error.text);
       });
   };

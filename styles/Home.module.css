@@ -11,6 +11,10 @@
   margin: 100px 0;
 }
 
+.zoom {
+  max-width: 100%;
+}
+
 .lineWrapper {
   margin-top: 16px;
   margin-bottom: 32px;
@@ -62,6 +66,7 @@
 
 .vimeoVideo {
   width: 880px;
+  max-width: 100%;
 }
 
 .headline2 {
@@ -198,11 +203,20 @@
   .vimeoWrapper {
     margin: 22px 0;
     padding: 22px;
+    max-width: 100%;
   }
 
   .headline2 {
     font-size: 22px;
-    max-width: 300px;
+    line-height: 200px;
+  }
+
+  .video {
+    height: 200px;
+  }
+
+  .content {
+    height: 200px;
   }
 }
 

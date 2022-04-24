@@ -40,8 +40,8 @@ export default function Home() {
           Gemeinsam gegen den Klimawandel. Für eine nachhaltige Zukunft.
         </p>
         </FadeIn>
+      <Zoom className={styles.zoom}>
       <div className={styles.vimeoWrapper}>
-      <Zoom>
         <Vimeo
           className={styles.vimeoVideo}
           video="702525682"
@@ -49,8 +49,8 @@ export default function Home() {
           width={880}
           responsive
         />
-        </Zoom>
       </div>
+        </Zoom>
 
       <div className={styles.section}>
         <div className={styles.videoWrapper}>
