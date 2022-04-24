@@ -59,9 +59,10 @@ export default function Home() {
             className={styles.video}
             autoPlay
             loop
+            controls="true"
             muted
             playsinline
-            poster="https://assets.codepen.io/6093409/river.jpg"
+            poster="/schlieren1.png"
           >
             <source src="/schlieren1.mp4" type="video/mp4" />
           </video>
@@ -109,7 +110,7 @@ export default function Home() {
             loop
             playsinline
             muted
-            poster="https://assets.codepen.io/6093409/river.jpg"
+            poster="/schlieren2.png"
           >
             <source src="/schlieren2.mp4" type="video/mp4" />
           </video>
@@ -154,7 +155,7 @@ export default function Home() {
             loop
             playsinline
             muted
-            poster="https://assets.codepen.io/6093409/river.jpg"
+            poster="/schlieren3.png"
           >
             <source src="/schlieren3.mp4" type="video/mp4" />
           </video>
