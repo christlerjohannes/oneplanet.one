@@ -3,6 +3,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Vimeo from '@u-wave/react-vimeo';
 import Image from 'next/image';
+import { ContactUs } from '../components/ContactUs';
+import FadeIn from 'react-fade-in';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 export default function Home() {
   return (
@@ -20,7 +24,8 @@ export default function Home() {
         <meta itemProp="name" content="ONE PLANET" />
         <meta itemProp="description" content="ONE PLANET, ONE VISION. Gemeinsam gegen den Klimawandel. Für eine nachhaltige Zukunft. Mittels Kommunikation, Kooperation und Konnektivität." />
       </Head>
-      <div className={styles.header}>
+        <FadeIn delay="220" className={styles.header}>
+
         <h1 className={styles.headline}>ONE PLANET.<br /> ONE VISION</h1>
 
         <p className={styles.paragraph}>
@@ -34,8 +39,9 @@ export default function Home() {
         <p className={styles.paragraphBold}>
           Gemeinsam gegen den Klimawandel. Für eine nachhaltige Zukunft.
         </p>
-      </div>
+        </FadeIn>
       <div className={styles.vimeoWrapper}>
+      <Zoom>
         <Vimeo
           className={styles.vimeoVideo}
           video="702525682"
@@ -43,6 +49,7 @@ export default function Home() {
           width={880}
           responsive
         />
+        </Zoom>
       </div>
 
       <div className={styles.section}>
@@ -62,23 +69,35 @@ export default function Home() {
             <h2 className={styles.headline2}>Informationskampagne</h2>
           </div>
         </div>
-        <Image width="100" height='25' alt="" src="/lines1.png"></Image>
-        <div className={styles.textSection}>
-          <p className={styles.paragraph}>
-            Was können wir konkret tun? Wie lassen sich gemeinschaftlich Mittel und
-            Wege finden, um die globale Erderwärmung aufzuhalten? Was wir brauchen,
-            ist eine ganzheitliche Vorstellung davon, welcher Herausforderung wir
-            uns gegenübersehen. Untätigkeit ist keine Option.
-          </p>
 
-          <p className={styles.paragraph}>
-            Daher haben wir uns zum Ziel gesetzt, mit führenden
-            Klimawissenschaftlerinnen und Klimawissenschaftlern zu kooperieren. Um
-            eine Informationsplattform zur <b>Veröffentlichung sämtlicher relevanten Klimadaten</b> zu schaffen.
-            Als vertrauensvolle Grundlage für einen sachlich fundierten
-            gesellschaftlichen Diskurs. Transparent und verständlich.
-          </p>
-        </div>
+        <div className={styles.gradientWrapper}>
+
+          <div className={styles.lineWrapper}>
+
+          </div>
+          <div className={styles.textSection}>
+          <Fade >
+            <p className={styles.paragraph}>
+              Was können wir konkret tun? Wie lassen sich gemeinschaftlich Mittel und
+              Wege finden, um die globale Erderwärmung aufzuhalten? Was wir brauchen,
+              ist eine ganzheitliche Vorstellung davon, welcher Herausforderung wir
+              uns gegenübersehen. Untätigkeit ist keine Option.
+            </p>
+
+            <p className={styles.paragraph}>
+              Daher haben wir uns zum Ziel gesetzt, mit führenden
+              Klimawissenschaftlerinnen und Klimawissenschaftlern zu kooperieren. Um
+              eine Informationsplattform zur <b>Veröffentlichung sämtlicher relevanten Klimadaten</b> zu schaffen.
+              Als vertrauensvolle Grundlage für einen sachlich fundierten
+              gesellschaftlichen Diskurs. Transparent und verständlich.
+            </p>
+          </Fade>
+          </div>
+
+          <div className={styles.lineWrapper2}>
+
+          </div>
+        </div >
       </div>
       <div className={styles.section}>
         <div className={styles.videoWrapper}>
@@ -97,28 +116,30 @@ export default function Home() {
             <h2 className={styles.headline2}>Forschung und Entwicklung</h2>
           </div>
         </div>
-        <div className={styles.textSection}>
-          <p className={styles.paragraph}>
-            Vor uns steht die größte zivilisatorische Transformation der
-            Geschichte. Um diese gigantische Herausforderung zu meistern,
-            benötigen wir eine Vielzahl von Ideen und Lösungen. Als nicht
-            profitorientierte Organisation stehen uns
-            <b>keine Interessenkonflikte</b> im Weg. Wir sind in der Lage,
-            entkoppelt von jeglichen – ökonomischen wie politischen – Einflüssen
-            oder Zwängen zu agieren. Um jene Technologien zu forcieren, die aus
-            unserer Sicht die stärkste Kraft entfalten zur Gestaltung einer
-            nachhaltigen Zukunft.
-          </p>
+        <div className={styles.gradientWrapper}>
+          <div className={styles.textSection}>
+            <Fade>
+            <p className={styles.paragraph}>
+              Vor uns steht die größte zivilisatorische Transformation der
+              Geschichte. Um diese gigantische Herausforderung zu meistern,
+              benötigen wir eine Vielzahl von Ideen und Lösungen. Als nicht
+              profitorientierte Organisation stehen uns <b>keine Interessenkonflikte</b> im Weg. Wir sind in der Lage,
+              entkoppelt von jeglichen – ökonomischen wie politischen – Einflüssen
+              oder Zwängen zu agieren. Um jene Technologien zu forcieren, die aus
+              unserer Sicht die stärkste Kraft entfalten zur Gestaltung einer
+              nachhaltigen Zukunft.
+            </p>
 
-          <p className={styles.paragraph}>
-            So halten wir das friedliche Zusammenleben von 11 Milliarden Menschen
-            für erreichbar. Mit einem Zeithorizont von 10.000 Jahren bei
-            europäischem Lebensstandard – ohne dabei den Planeten an seine
-            Belastungsgrenzen zu bringen. Es ist die Stunde der Wissenschaft, der
-            Forschung, der Visionen und Taten.
-          </p>
-
-          <h3>ONE PLANET. ONE SPIRIT</h3>
+            <p className={styles.paragraph}>
+              So halten wir das friedliche Zusammenleben von 11 Milliarden Menschen
+              für erreichbar. Mit einem Zeithorizont von 10.000 Jahren bei
+              europäischem Lebensstandard – ohne dabei den Planeten an seine
+              Belastungsgrenzen zu bringen. Es ist die Stunde der Wissenschaft, der
+              Forschung, der Visionen und Taten.
+            </p>
+            </Fade>
+            <h3 className={styles.headline3}>ONE PLANET. ONE SPIRIT</h3>
+          </div>
         </div>
       </div>
 
@@ -139,31 +160,47 @@ export default function Home() {
             <h2 className={styles.headline2}>ONE PLANET. ONE MISSION.</h2>
           </div>
         </div>
+        <div className={styles.gradientWrapper}>
+          <div className={styles.textSection}>
+            <div className={styles.lineWrapper3}>
 
-        <div className={styles.textSection}>
-          <p className={styles.paragraph}>
-            ONE PLANET verfolgt als vordringliches Ziel, die weltweiten
-            CO2-Emissionen von jährlich 38 Gigatonnen zu neutralisieren – und
-            langfristig
-            <b
-            >den CO2-Gehalt der Atmosphäre auf ein vorindustrielles Niveau zu
-              senken</b
-            >. Das Non-Profit-Start-up setzt auf einen lebendigen Austausch; auf
-            Kommunikation, Kooperation und Konnektivität.
-          </p>
+            </div>
+            <Fade>
+            <p className={styles.paragraph}>
+              ONE PLANET verfolgt als vordringliches Ziel, die weltweiten
+              CO2-Emissionen von jährlich 38 Gigatonnen zu neutralisieren – und
+              langfristig
+              <b
+              >den CO2-Gehalt der Atmosphäre auf ein vorindustrielles Niveau zu
+                senken</b
+              >. Das Non-Profit-Start-up setzt auf einen lebendigen Austausch; auf
+              Kommunikation, Kooperation und Konnektivität.
+            </p>
 
-          <p className={styles.paragraph}>
-            Die Geschichte zeigt, dass wir imstande sind, Herausragendes leisten.
-            Mit der uns Menschen angeborenen Fähigkeit, innovativ und kreativ zu
-            sein, Allianzen zu bilden, unsere Kräfte zu vereinen und zu bündeln,
-            ausgerichtet auf ein Ziel: den Weg für eine nachhaltige Zukunft zu
-            ebenen.
-          </p>
+            <p className={styles.paragraph}>
+              Die Geschichte zeigt, dass wir imstande sind, Herausragendes leisten.
+              Mit der uns Menschen angeborenen Fähigkeit, innovativ und kreativ zu
+              sein, Allianzen zu bilden, unsere Kräfte zu vereinen und zu bündeln,
+              ausgerichtet auf ein Ziel: den Weg für eine nachhaltige Zukunft zu
+              ebenen.
+            </p>
+            </Fade>
 
-          <h3>ONE PLANET. ONE MISSION</h3>
+            <h3 className={styles.headline3}>ONE PLANET. ONE MISSION</h3>
+
+            <div className={styles.lineWrapper4}>
+
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div className={styles.footer}>
+          <h1 className={styles.headline}>KONTAKT</h1>
+
+          <ContactUs />
         </div>
       </div>
-    </div>
 
-  )
+      )
 }

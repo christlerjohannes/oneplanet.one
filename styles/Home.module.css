@@ -11,6 +11,55 @@
   margin: 100px 0;
 }
 
+.lineWrapper {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  height: 40px;
+  width: 100%;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-image: url('/lines1.png');
+}
+
+.lineWrapper2 {
+  position: relative;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  height: 130px;
+  margin-right: 0;
+  width: 100%;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url('/lines2.png');
+
+}
+
+.lineWrapper3 {
+  margin-top: 16px;
+  height: 120px;
+  width: 100%;
+  background-size: contain;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  background-image: url('/lines3.png');
+
+}
+
+.lineWrapper4 {
+  margin-top: 16px;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url('/lines4.png');
+  margin-top: 32px;
+
+}
+
 .vimeoVideo {
   width: 880px;
 }
@@ -41,6 +90,11 @@
   flex: 1;
 }
 
+.gradientWrapper {
+  padding: 22px 0px;
+  background-image: linear-gradient(#e3eeed, white,#e3eeed);
+}
+
 #page {
   min-height: 100%;
   max-width: 100%;
@@ -53,6 +107,11 @@
   margin: 16px 0;
   font-size: 22px;
   text-align: center;
+}
+
+.headline3 {
+  padding: 16px;
+  margin: 16px 0;
 }
 
 .paragraphBold {
@@ -72,6 +131,15 @@
   justify-content: center;
   flex-direction: column;
   background-image: url('/bg.jpg');
+  box-shadow:  1px 6px 25px rgba(0,0,0,0.35)
+}
+
+.header .paragraph {
+  color: white;
+}
+
+.header .paragraphBold {
+  color: white;
 }
 
 .header-text {
@@ -84,7 +152,7 @@
   font-size: 92px;
   font-weight: bold;
   margin: 32px 0;
-  color: 'white';
+  color: white;
 }
 
 .videoWrapper {
@@ -99,6 +167,7 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+  box-shadow:  1px 6px 25px rgba(0,0,0,0.35)
 }
 
 
@@ -133,5 +202,16 @@
 
   .headline2 {
     font-size: 22px;
+    max-width: 300px;
   }
+}
+
+.footer {
+  padding: 64px 0px;
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('/bg.jpg');
+  align-items: center;
 }
