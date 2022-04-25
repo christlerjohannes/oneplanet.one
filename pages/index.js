@@ -63,7 +63,7 @@ export default function Home() {
             playsinline
             poster="/schlieren1.png"
           >
-            <source src="/schlieren1.mp4" type="video/mp4" />
+            <source src="/1.mp4" type="video/mp4" />
           </video>
 
           <div className={styles.content}>
@@ -111,7 +111,7 @@ export default function Home() {
             muted
             poster="/schlieren2.png"
           >
-            <source src="/schlieren2.mp4" type="video/mp4" />
+            <source src="/2.mp4" type="video/mp4" />
           </video>
 
           <div className={styles.content}>
@@ -156,7 +156,7 @@ export default function Home() {
             muted
             poster="/schlieren3.png"
           >
-            <source src="/schlieren3.mp4" type="video/mp4" />
+            <source src="/3.mp4" type="video/mp4" />
           </video>
 
           <div className={styles.content}>
